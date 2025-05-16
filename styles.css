@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    color: #2c5530;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.timer {
+    margin-bottom: 2rem;
+}
+
+.time-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2c5530;
+    margin-bottom: 2.5rem;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start {
+    background-color: #234f1e;
+    color: white;
+}
+
+#pause {
+    background-color: #607d3b;
+    color: white;
+}
+
+#reset {
+    background-color: #728c69;
+    color: white;
+}
+
+.mode-selector {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.mode {
+    background-color: #E8F5E9;
+    color: #558B2F;
+}
+
+.mode.active {
+    background-color: #558B2F;
+    color: white;
+}
+
+.mode-toggle {
+    margin-bottom: 1rem;
+}
+
+#toggle-mode {
+    background-color: #7CB342;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+}
+
+#toggle-mode.active {
+    background-color: #558B2F;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.motivational-text {
+    margin-top: 1.5rem;
+    color: #2c5530;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+} 
