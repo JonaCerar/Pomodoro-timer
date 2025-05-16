@@ -60,8 +60,7 @@ class PomodoroTimer {
     
     reset() {
         this.pause();
-        const activeMode = document.querySelector('.mode.active');
-        this.timeLeft = parseInt(activeMode.dataset.time) * 60;
+        this.timeLeft = this.isWorkMode ? 25 * 60 : 5 * 60;
         this.updateDisplay();
     }
     
